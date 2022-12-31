@@ -1,3 +1,7 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
 .tx{text-align:center;font-size:15px;color:#535353;}
 .txn{font-size:15px;color:#535353;}
 .tx1{text-align:center;font-size:30px;color:#88abda;}
