@@ -12,7 +12,7 @@
 		<style>
 			.loading{width:100%;height:100%;position:fixed;top:0;left:0;z-index:100;background:#ffffff;opacity:0.5;}
 			.loading .pic{width:64px;height:64px;background:url(../../images/loading.gif);position:absolute;top:0;bottom:0;left:0;right:0;margin:auto;}
-			.smc{float:left;color:#ffffff;width:25%;background:#b9ceea;text-align:center;padding:2%;cursor:pointer;}
+			.smc{float:left;color:#ffffff;width:20%;background:#b9ceea;text-align:center;padding:2%;cursor:pointer;}
 			.sc{margin-left:10%;margin-right:10%;border:#b9ceea 2px solid;padding:2%;text-align:left;line-height:250%;}
 		</style>
 		<div class="loading">
@@ -50,6 +50,7 @@
                 document.getElementById("game").style.display = "none";
                 document.getElementById("designer").style.display = "none";
                 document.getElementById("statistician").style.display = "none";
+                document.getElementById("myrehabilitation").style.display = "none";
             }
             function load(content) {
                 var param = getParam(content);
@@ -62,28 +63,35 @@
                 } else if (param == "statistician") {
                     hidePages()
                     document.getElementById("statistician").style.display = "block";
-                }
+                } else if (param == "myrehabilitation") {
+					hidePages();
+					document.getElementById("myrehabilitation").style.display = "block";
+				}
             }
             window.onload = function() {
                 load(getParam());
                 document.getElementById("menu_game").onclick = function() {
-                    window.location.href="download.html?content=game";
+                    window.location.href = "download.html?content=game";
                 }
                 document.getElementById("menu_designer").onclick = function() {
-                    window.location.href="download.html?content=designer";
+                    window.location.href = "download.html?content=designer";
                 }
                 document.getElementById("menu_statistician").onclick = function() {
-                    window.location.href="download.html?content=statistician";
+                    window.location.href = "download.html?content=statistician";
                 }
+				document.getElementById("menu_myrehabilitation").onclick = function() {
+					window.location.href = "download.html?content=myrehabilitation";
+				}
             }
         </script>
         
 		<div style="padding: 10% 0 10% 0;background-color: #88abda;color: #e9e9e9;text-align: center;font-size: 200%;">Download Rehabilitation Game</div>
 
         <div style="background-color:#b9ceea;margin: 1%;">
-            <div class="smc" style="margin-left:12.5%" id="menu_game">Game</div>
+            <div class="smc" style="margin-left:10%" id="menu_game">Game</div>
             <div class="smc" id="menu_designer">Card Designer</div>
             <div class="smc" id="menu_statistician">Statistician</div>
+            <div class="smc" id="menu_myrehabilitation">My Rehabilitation</div>
         </div>
 		
 		<div class="mdiv">
@@ -93,23 +101,21 @@
 				<div class="tx3v">
 					<img src="images/icons_software/Rehabilitation Game logo.jpg" width="20%" />
 					<br/><br/>
-					Play with your friends and enjoy yourselves.
-					<br/><br/>
 					<div class="sc">
 						Operation system: <b>Windows 7/8/10</b><br/>
-						Required disk space: <b>50.7 MB</b><br/>
+						Required disk space: <b>55 MB</b><br/>
 						Language: <b>English</b><br/>
-						Version: <b>pre-alpha</b><br/>
-						Release data: <b>2rd FEB 2023</b>
+						Version: <b>beta</b><br/>
+						Release data: <b>17th Mar 2023</b>
 						<br/>
 						<div style="color:#ff9933;">
 							<img src="images/icons/alert.png" width="5%" />
-							The project is now in pre-alpha version, some game objects are not finished and are replaced by cubes.
+							The game is still in beta version.
 						</div>
 					</div>
 					<br/>
 					<div style="clear:both;width: 80%;margin-left: 10%;margin-bottom: 2%;text-align:center;font-size:20px;background-color:#e8e8e8;color:black;padding:18px;cursor:pointer;">
-						<a href="http://www.dream7c.com/research/rehabilitation%20game/Rehabilitation Game pre-alpha.rar">Download</a>
+						<a href="http://www.dream7c.com/research/rehabilitation%20game/Rehabilitation Game beta.rar">Download</a>
 					</div>
 				</div>
             </div>
@@ -135,7 +141,7 @@
 						</div>
 						<div style="color:#ff9933;">
 							<img src="images/icons/alert.png" width="5%" />
-							The software is now in alpha version.
+							The software is still in alpha version.
 						</div>
 					</div>
 					<br/>
@@ -157,8 +163,8 @@
 						Operation system: <b>Windows 7/8/10</b><br/>
 						Required disk space: <b>768 KB</b><br/>
 						Language: <b>English</b><br/>
-						Version: <b>alpha</b><br/>
-						Release data: <b>31st JAN 2023</b>
+						Version: <b>beta</b><br/>
+						Release data: <b>5th Mar 2023</b>
 						<br/>
 						<div style="color:#88abda;">
 							<img src="images/icons/attention.png" width="5%" />
@@ -166,12 +172,39 @@
 						</div>
 						<div style="color:#ff9933;">
 							<img src="images/icons/alert.png" width="5%" />
-							The software is now in alpha version.
+							The software is still in beta version.
 						</div>
 					</div>
 					<br/>
 					<div style="clear:both;width: 80%;margin-left: 10%;margin-bottom: 2%;text-align:center;font-size:20px;background-color:#e8e8e8;color:black;padding:18px;cursor:pointer;">
-						<a href="http://www.dream7c.com/research/rehabilitation%20game/Statistician alpha.rar">Download</a>
+						<a href="http://www.dream7c.com/research/rehabilitation%20game/Statistician beta.rar">Download</a>
+					</div>
+				</div>
+			</div>
+
+			<div style="clear:both;display:none;" id="myrehabilitation">
+				<br/>
+				<h1 class="tx2v">My Rehabilitation</h1>
+				<div class="tx3v">
+					<img src="images/icons_software/My Rehabilitation logo.jpg" width="20%" />
+					<br/><br/>
+					My Rehabilitation is an Android app where users can learn more about the game.
+					<br/><br/>
+					<div class="sc">
+						Operation system: <b>Android 7.0+</b><br/>
+						Required disk space: <b>3.91 MB</b><br/>
+						Language: <b>English</b><br/>
+						Version: <b>alpha</b><br/>
+						Release data: <b>20th Mar 2023</b>
+						<br/>
+						<div style="color:#ff9933;">
+							<img src="images/icons/alert.png" width="5%" />
+							The software is still in alpha version.
+						</div>
+					</div>
+					<br/>
+					<div style="clear:both;width: 80%;margin-left: 10%;margin-bottom: 2%;text-align:center;font-size:20px;background-color:#e8e8e8;color:black;padding:18px;cursor:pointer;">
+						<a href="http://www.dream7c.com/research/rehabilitation%20game/My Rehabilitation.apk">Download</a>
 					</div>
 				</div>
 			</div>

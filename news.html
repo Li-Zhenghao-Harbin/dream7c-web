@@ -34,7 +34,7 @@
 							<li><a href="#" style="color:#88abda;"><img src="images/menu_ico/game.png" width="6%" />&nbsp;游戏</a>
 								<ul>
 									<li><a href="dream7c CL3.html">方块竞技3&nbsp;<img src="images/menu_ico/windows.png" width="6%" /></a></li>
-									<!-- <li><a href="#"></a></li> -->
+									<li><a href="research/rehabilitation game/index.html" target="_blank">Rehabilitation Game&nbsp;<img src="images/menu_ico/windows.png" width="6%" /></a></li>
 								</ul>
 							</li>
 							<li><a href="#" style="color:#88abda;"><img src="images/menu_ico/music.png" width="6%" />&nbsp;音乐</a>
@@ -72,7 +72,7 @@
 		<script src="js/jquery-1.11.0.min.js" type="text/javascript"></script>
 		<script src="js/megamenu.js"></script>
 		<style type="text/css">
-			.div_year{float:left;margin-left:4%;width:15%;cursor:pointer;padding:1%;}
+			.div_year{float:left;margin-left:4%;width:12%;cursor:pointer;padding:1%;}
 			.div_ev2{float:left;width:50%;}
 		</style>
 		<h1 class="tx1">新闻动态</h1>
@@ -81,6 +81,7 @@
 		<div class="tx3v div_year" id="year3">2018</div>
 		<div class="tx3v div_year" id="year4">2021</div>
 		<div class="tx3v div_year" id="year5">2022</div>
+		<div class="tx3v div_year" id="year6">2023</div>
 		<div style="clear:both;"><br/></div>
 		<div class="mdiv">
 			<div id="news1">
@@ -160,10 +161,21 @@
 					</div>
 				</a>
 			</div>
+			<div style="display:none;" id="news6">
+				<hr/><p class="tx2v">2023</p><hr/>	
+				<a href="dream7c RA.html">
+					<div>
+						<div style="text-align: center;">
+							<img src="images/dream7c RA logo.jpg" width="20%" />
+						</div>
+						<p class="tx3v">柒幻 谷雨 正式发布<br/>2023.01.31</p>
+					</div>
+				</a>
+			</div>
 		</div>
 		<script type="text/javascript">
 			window.onload=function(){
-				var n=5;
+				var n=6;
 				var display=function(k){
 					for(var i=1;i<=n;i++){
 						document.getElementById("news"+i).style.display='none';
@@ -188,6 +200,9 @@
 				}
 				document.getElementById("year5").onclick=function(){
 					display(5);
+				}
+				document.getElementById("year6").onclick=function(){
+					display(6);
 				}
 			}
 		</script>
